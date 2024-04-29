@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Puzzle</title>
+    <link rel="stylesheet" href="puzzle.css" />
+    <script src="puzzle.js"></script>
+  </head>
+
+  <body>
+    <img id="play" src="sound-png-35800.png" width="50" />
+    <img id="title" src="./logo.png" />
+    <div id="board"></div>
+    <h1>Turns: <span id="turns">0</span></h1>
+
+    <script>
+      let play = document.getElementById("play");
+      function playMusic() {
+        let audio = new Audio("puzzle.mp3");
+        audio.play();
+      }
+      play.addEventListener("click", playMusic);
+    </script>
+  </body>
+</html>
